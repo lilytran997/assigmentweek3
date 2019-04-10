@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">assigment_week3</string>
+    <string name="todo">TODO</string>
+    <string name="main_note">Show Text</string>
+    <string name="btn_background">Change Background</string>
+    <string name="btn_title">Change Title</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="btn_save">Save</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="name_hint">Your Name</string>
+</resources>
