@@ -59,7 +59,7 @@
             android:layout_marginTop="10dp"
             android:contentDescription="@string/todo"
             android:scaleType="fitXY"
-            android:src="@drawable/image2" />
+            android:src="@drawable/image8" />
         <ImageButton
             android:id="@+id/image4"
             android:layout_width="140dp"
@@ -88,7 +88,7 @@
             android:layout_row="1"
             android:contentDescription="@string/todo"
             android:scaleType="fitXY"
-            android:src="@drawable/image5" />
+            android:src="@drawable/image7" />
 
         <Button
             android:layout_width="match_parent"

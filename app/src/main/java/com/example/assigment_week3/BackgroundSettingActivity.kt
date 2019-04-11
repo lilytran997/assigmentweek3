@@ -20,10 +20,9 @@ class BackgroundSettingActivity : AppCompatActivity() {
         supportActionBar!!.title = "Background"
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-
-
         //imageview
         val imageView = findViewById<ImageView>(R.id.showimage)
+       //imageView.setImageResource(R.drawable.image9)
 
         //imageButton
         var a: Int = R.id.showimage
@@ -34,8 +33,8 @@ class BackgroundSettingActivity : AppCompatActivity() {
         }
         val imageButton2 = findViewById<ImageButton>(R.id.image2)
         imageButton2?.setOnClickListener {
-            imageView.setImageResource(R.drawable.image2)
-             a = R.drawable.image2
+            imageView.setImageResource(R.drawable.image8)
+             a = R.drawable.image8
         }
         val imageButton3 = findViewById<ImageButton>(R.id.image3)
         imageButton3?.setOnClickListener {
@@ -49,8 +48,8 @@ class BackgroundSettingActivity : AppCompatActivity() {
         }
         val imageButton5 = findViewById<ImageButton>(R.id.image5)
         imageButton5?.setOnClickListener {
-            imageView.setImageResource(R.drawable.image5)
-            a = R.drawable.image5
+            imageView.setImageResource(R.drawable.image7)
+            a = R.drawable.image7
         }
         val imageButton6 = findViewById<ImageButton>(R.id.image6)
         imageButton6?.setOnClickListener {
@@ -66,7 +65,6 @@ class BackgroundSettingActivity : AppCompatActivity() {
         button?.setOnClickListener {
             intent.putExtra("image", a)
             startActivity(intent)
-            finish()
         }
     }
 

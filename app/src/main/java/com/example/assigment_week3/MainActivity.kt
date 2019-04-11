@@ -17,11 +17,13 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(findViewById(R.id.toolbar))
         supportActionBar!!.title = "Main Screen"
 
-        //show image
+        //show BACKGROUND
         val imge = findViewById<ImageView>(R.id.imageview)
+        //imge.setImageResource(R.drawable.image9)
         val data = intent
         val img = data.getIntExtra("image",0)
             imge.setImageResource(img)
+
         //setonclick button
         bg_btn.setOnClickListener(backgroundlistener)
         title_btn.setOnClickListener(titlelistenre)
