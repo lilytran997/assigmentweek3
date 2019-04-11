@@ -22,7 +22,9 @@ class BackgroundSettingActivity : AppCompatActivity() {
 
         //imageview
         val imageView = findViewById<ImageView>(R.id.showimage)
-       //imageView.setImageResource(R.drawable.image9)
+        val data = intent
+        val img = data.getIntExtra("image1",0)
+        imageView.setImageResource(img)
 
         //imageButton
         var a: Int = R.id.showimage

@@ -6,10 +6,13 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 //import android.support.v7.widget.Toolbar
 import android.view.View
+import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -17,26 +20,28 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(findViewById(R.id.toolbar))
         supportActionBar!!.title = "Main Screen"
 
-        //show BACKGROUND
         val imge = findViewById<ImageView>(R.id.imageview)
-        //imge.setImageResource(R.drawable.image9)
+
+        //change background
         val data = intent
         val img = data.getIntExtra("image",0)
-            imge.setImageResource(img)
+        imge.setImageResource(img)
 
         //setonclick button
-        bg_btn.setOnClickListener(backgroundlistener)
-        title_btn.setOnClickListener(titlelistenre)
-    }
-    //define backgroundlistener
-    private val backgroundlistener = View.OnClickListener {
-        val intenta = Intent(this, BackgroundSettingActivity::class.java)
-        startActivity(intenta)
-    }
-    //define titlelistener
-    private val titlelistenre = View.OnClickListener {
-        val intentb = Intent(this, TitleSettingActivity::class.java)
-        startActivity(intentb)
+        val buttonbg = findViewById<Button>(R.id.bg_btn)
+        buttonbg?.setOnClickListener {
+            val intenta = Intent(this, BackgroundSettingActivity::class.java)
+            intenta.putExtra("image1", img)
+            startActivity(intenta)
+        }
+        val buttontitle = findViewById<Button>(R.id.title_btn)
+
+        buttontitle?.setOnClickListener {
+            val intentb = Intent(this, TitleSettingActivity::class.java)
+            startActivity(intentb)
+        }
+
+
     }
 
 
