@@ -31,7 +31,8 @@
         android:layout_marginBottom="20dp"
         android:text="@string/main_note"
         android:textAlignment="center"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:textColor="#D81B60"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

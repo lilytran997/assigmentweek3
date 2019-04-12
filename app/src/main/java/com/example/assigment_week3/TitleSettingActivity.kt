@@ -19,27 +19,17 @@ class TitleSettingActivity : AppCompatActivity() {
         setSupportActionBar(findViewById(R.id.toolbar))
         supportActionBar!!.title = "Title"
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
-        //Your text
-        val edtext = findViewById<EditText>(R.id.text)
-        edtext.addTextChangedListener(object : TextWatcher{
-            override fun afterTextChanged(s: Editable?) {
-
-            }
-
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-
-
-            }
-
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-
-            }
-
-        })
-
         //view
         val colorview = findViewById<View>(R.id.colortext)
+        //Your text
+        val edtext = findViewById<EditText>(R.id.text)
+        val data = intent
+        val editext = data.getStringExtra("text")
+        val colortext = data.getIntExtra("color",0)
+        colorview.setBackgroundColor(colortext)
+        edtext.setText(editext)
+        edtext.setTextColor(colortext)
+
 
         //button
         val btncolor1 = findViewById<Button>(R.id.color1)

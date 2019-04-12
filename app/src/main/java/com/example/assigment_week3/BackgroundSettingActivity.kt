@@ -27,7 +27,7 @@ class BackgroundSettingActivity : AppCompatActivity() {
         imageView.setImageResource(img)
 
         //imageButton
-        var a: Int = R.id.showimage
+        var a: Int = img
         val imageButton = findViewById<ImageButton>(R.id.image1)
         imageButton?.setOnClickListener {
             imageView.setImageResource(R.drawable.image1)
