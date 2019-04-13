@@ -26,7 +26,7 @@ class BackgroundSettingActivity : AppCompatActivity() {
         image2.setOnClickListener(imagbutton2)
         image3.setOnClickListener(imagbutton3)
         image4.setOnClickListener(imagbutton4)
-        image5.setOnClickListener(imagbutton5)
+        image6.setOnClickListener(imagbutton5)
         image5.setOnClickListener(imagbutton6)
         btn_save.setOnClickListener(btnSave)
 
@@ -58,13 +58,13 @@ class BackgroundSettingActivity : AppCompatActivity() {
     }
 
     private val imagbutton5 = View.OnClickListener {
-        showimage.setImageResource(R.drawable.image7)
-        a = R.drawable.image7
+        showimage.setImageResource(R.drawable.image6)
+        a = R.drawable.image6
     }
 
     private val imagbutton6 = View.OnClickListener {
-        showimage.setImageResource(R.drawable.image6)
-        a = R.drawable.image6
+        showimage.setImageResource(R.drawable.image7)
+        a = R.drawable.image7
     }
     //button save
     private val btnSave= View.OnClickListener {
