@@ -19,7 +19,8 @@
         android:layout_margin="20dp"
         android:layout_gravity="right"
         android:contentDescription="@string/todo"
-        android:scaleType="centerInside" />
+        android:scaleType="centerInside"
+        android:src="@drawable/image9"/>
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
